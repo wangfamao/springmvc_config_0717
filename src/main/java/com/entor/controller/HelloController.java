@@ -1,6 +1,7 @@
 package com.entor.controller;
 
 import com.entor.entity.User;
+import com.entor.util.UUIDUtils;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -39,5 +40,10 @@ public class HelloController {
         user.setName("李四");
         model.addAttribute("user",user);
         return "index";
+    }
+    @RequestMapping("/getUUID")
+    @ResponseBody
+    public String getUUID(){
+        return UUIDUtils.getUUID();
     }
 }
