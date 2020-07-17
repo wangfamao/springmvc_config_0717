@@ -7,7 +7,7 @@
 <h2>
     姓名：${name}<br/>
     姓名：${user.name}，编号：${user.id}<br/>
-    测试测试测试测试
+    测试测试
 </h2>
 </body>
 </html>
