@@ -46,4 +46,9 @@ public class HelloController {
     public String getUUID(){
         return UUIDUtils.getUUID();
     }
+    @RequestMapping("/getId/{id}")
+    @ResponseBody
+    public String getId(@PathVariable Integer id){
+        return "Hello:"+id;
+    }
 }
