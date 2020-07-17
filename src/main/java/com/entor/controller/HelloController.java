@@ -49,6 +49,6 @@ public class HelloController {
     @RequestMapping("/getId/{id}")
     @ResponseBody
     public String getId(@PathVariable Integer id){
-        return "Hello:"+id;
+        return "Hello："+id;
     }
 }
